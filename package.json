@@ -1,12 +1,20 @@
 {
-  "name": "desktop",
+  "name": "merch-store-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Server for Stripe checkout",
+  "main": "StripeServer.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node StripeServer.js"
   },
-  "keywords": [],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "stripe": "^15.8.0"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
+
